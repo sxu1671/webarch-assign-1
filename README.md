@@ -23,7 +23,7 @@ Create a Contact Us page
  - Need to have the following fields: Name, Subject, Message
  - Must have a submit button
  - When someone clicks the submit button, a javascript message should appear on the top of the page saying "Your message has been sent"
- - The message does not need to actually be sent
+ - The message does not need to actually be sent to any particular address
  - Must use Javascript
 
 Look and feel
@@ -36,3 +36,12 @@ Look and feel
 Interactivity
  - Must link at least one external Javascript file to the web page
  - Must use Javascript to power the Contact Us page
+
+ Other requirements
+ - HTML and CSS must validate!
+
+ Extra Credit
+ - Write a local comments section at the bottom of each blog post page
+ - There should be a form where you can enter your name, and a message
+ - Messages that have been written earlier should be displayed before the form
+ - Must use local storage to save previous comments that have been made on that browser 
