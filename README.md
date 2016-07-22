@@ -39,7 +39,7 @@ You will need to do the following:
  - Must use JavaScript to power the Contact Us page
 
 **Other requirements**
- - HTML and CSS must validate!
+ - HTML and CSS must validate! Use the Markup Validation Service for [HTML](https://validator.w3.org/#validate_by_upload+with_options) and [CSS](http://jigsaw.w3.org/css-validator/)
 
 **Extra Credit**
  - Write a local comments section at the bottom of each blog post page
