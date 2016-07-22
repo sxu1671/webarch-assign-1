@@ -22,13 +22,17 @@ You will need to do the following:
  - Create a page that contains a (non-working) form where people can contact you
  - Need to have the following fields: Name, Subject, Message
  - Must have a submit button
+ - Must make all fields required: if user submits form without those fields a message saying which fields need to be filled out at the top of the page.
+   - Note: **this is not an alert box.** You will need to modify the HTML of the page to place this text at the top of the page.
  - When someone clicks the submit button, a message should appear on the top of the page saying "Your message has been sent"
    - Note: **this is not an alert box.** You will need to modify the HTML of the page to place this text at the top of the page.
  - The message does not need to be sent to any particular address
  - Must use JavaScript
 
 **Look and feel**
- - Must have a header and a footer that contains the following links: the homepage, the About us page, and the Contact Us page
+ - Must have a header and a footer on every page that contains the following links: the homepage, the About us page, and the Contact Us page
+ - Must specifically style the header with one css style
+ - Must specifically style th efooter with one css style
  - Must link at least one external CSS style sheet that **you have written yourself**
  - Can use [Bootstrap](http://getbootstrap.com/) (or another CSS framework) as one of the CSS style sheets, but again one CSS file must be handwritten by you
  - Must style at least one *element*, one *class*, and one *id* and use it somewhere on your web page
