@@ -33,7 +33,7 @@ You will need to do the following:
 **Look and feel**
  - Must have a header and a footer on every page that contains the following links: the homepage, the About us page, and the Contact Us page
  - Must specifically style the header with one css style
- - Must specifically style th efooter with one css style
+ - Must specifically style the footer with one css style
  - Must link at least one external CSS style sheet that **you have written yourself**
  - Can use [Bootstrap](http://getbootstrap.com/) (or another CSS framework) as one of the CSS style sheets, but again one CSS file must be handwritten by you
  - Must style at least one *element*, one *class*, and one *id* and use it somewhere on your web page
