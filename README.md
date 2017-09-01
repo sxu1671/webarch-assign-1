@@ -35,7 +35,7 @@ You will need to do the following:
  - Must specifically style the header with one css style
  - Must specifically style the footer with one css style
  - Must link at least one external CSS style sheet that **you have written yourself**
- - Can use [Bootstrap](http://getbootstrap.com/) (or another CSS framework) as one of the CSS style sheets, but again one CSS file must be handwritten by you
+ - Can use [Skeleton](http://getskeleton.com/) (or another CSS framework) as one of the CSS style sheets, but again one CSS file must be handwritten by you
  - Must style at least one *element*, one *class*, and one *id* and use it somewhere on your web page
  - Must use styles that cascade, i.e. some element whose style is affected by more than 1 declaration in your CSS file
 
