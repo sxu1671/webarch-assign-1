@@ -1,11 +1,45 @@
-var history = "";
-var contactForm3 = document.getElementById("commentForm3");
-contactForm3.addEventListener("submit", function(event) {
+var History3 = "";
+var name = "";
+var message = "";
+var currentEntry = "";
+var output = "";
+var n = "Name: ";
+var m = "Message: ";
+var commentForm3 = document.getElementById("commentForm3");
+commentForm3.addEventListener("submit", function(event) {
 	event.preventDefault();
-	var name = contactForm3.elements.namedItem("name").value;
-	var message = contactForm3.elements.namedItem("message").value;
-	var output = document.getElementById("comment3");
-	var entries = "Name: " + name + " " + "Message: " + message;
-	localStorage.setItem("entries", entries);
-	output.innerHTML = localStorage.getItem("entries");
+
+	name = commentForm3.elements.namedItem("name").value;
+	message = commentForm3.elements.namedItem("message").value;
+	currentEntry = n.bold() + name + " " + m.bold() + message + "\xa0" + "\xa0" + "\xa0" + "\xa0" + "\xa0";
+	output = document.getElementById("comment3");
+
+	if(localStorage.getItem("History3")) {
+		var history = localStorage.getItem("History3");
+	} else {
+		var history = "";
+	}
+	History3 = history + currentEntry;
+
+	localStorage.setItem("History3", History3);
+
+	output.innerHTML = localStorage.getItem("History3");
+	document.getElementById('commentForm3').reset();
 })
+
+function previousComments() {
+	output = document.getElementById("comment3");
+
+	if(localStorage.getItem("History3")) {
+		var history = localStorage.getItem("History3");
+		History3 = history + currentEntry;
+
+	} else {
+		var history = "";
+		History3 = "";
+	}
+
+	localStorage.setItem("History3", History3);
+
+	output.innerHTML = localStorage.getItem("History3");
+}

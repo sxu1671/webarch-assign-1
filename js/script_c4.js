@@ -1,11 +1,45 @@
-var history = "";
-var contactForm4 = document.getElementById("commentForm4");
-contactForm4.addEventListener("submit", function(event) {
+var History4 = "";
+var name = "";
+var message = "";
+var currentEntry = "";
+var output = "";
+var n = "Name: ";
+var m = "Message: ";
+var commentForm4 = document.getElementById("commentForm4");
+commentForm4.addEventListener("submit", function(event) {
 	event.preventDefault();
-	var name = contactForm4.elements.namedItem("name").value;
-	var message = contactForm4.elements.namedItem("message").value;
-	var output = document.getElementById("comment4");
-	var entries = "Name: " + name + " " + "Message: " + message;
-	localStorage.setItem("entries", entries);
-	output.innerHTML = localStorage.getItem("entries");
+
+	name = commentForm4.elements.namedItem("name").value;
+	message = commentForm4.elements.namedItem("message").value;
+	currentEntry = n.bold() + name + " " + m.bold() + message + "\xa0" + "\xa0" + "\xa0" + "\xa0" + "\xa0";
+	output = document.getElementById("comment4");
+
+	if(localStorage.getItem("History4")) {
+		var history = localStorage.getItem("History4");
+	} else {
+		var history = "";
+	}
+	History4 = history + currentEntry;
+
+	localStorage.setItem("History4", History4);
+
+	output.innerHTML = localStorage.getItem("History4");
+	document.getElementById('commentForm4').reset();
 })
+
+function previousComments() {
+	output = document.getElementById("comment4");
+
+	if(localStorage.getItem("History4")) {
+		var history = localStorage.getItem("History4");
+		History4 = history + currentEntry;
+
+	} else {
+		var history = "";
+		History4 = "";
+	}
+
+	localStorage.setItem("History4", History4);
+
+	output.innerHTML = localStorage.getItem("History4");
+}

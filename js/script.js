@@ -7,13 +7,13 @@ contactForm.addEventListener("submit", function(event) {
 	var output = document.getElementById("contact");
 	// console.log(name);
 	if(name === "") {
-		output.innerHTML = "Please fill out name field";
+		output.innerHTML = "Please fill out the name field!";
 	} else if(subject === "") {
-		output.innerHTML = "Please fill out subject field";
+		output.innerHTML = "Please fill out the subject field!";
 	} else if(message === "") {
-		output.innerHTML = "Please write a message";
+		output.innerHTML = "Please write a message!";
 	} else {
-		output.innerHTML = "Your message has been sent";
+		output.innerHTML = "Your message has been sent!";
 	}	
 })
 
